@@ -106,4 +106,19 @@ section h2 {
     border: none;
     background-color: green;
     color: #fff;
+    font-size: 16px;
+    font-weight:bold;
+    font-style: italic;
+    cursor: pointer;
+    border-radius: 16px;
+}
+
+.price{
+    margin: 16px 0;
+    display: block;
+}
+
+.price del {
+    color: gray;
+    font-size: 16px;
 }
