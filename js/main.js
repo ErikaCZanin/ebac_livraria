@@ -2,10 +2,23 @@ $(document).ready(function(){
     $('#carroseul-imgs').slick({
        autoplay:true
     })
- 
+
+    $(document).ready(function(){
+        $('#carroseul-produtos').slick({
+          dots: true, // Adiciona navegação por pontos (opcional)
+          autoplay: true, // Faz o carousel rolar automaticamente
+          autoplaySpeed: 2000, // Intervalo entre a troca automática (2 segundos)
+          speed: 500 // Velocidade de transição entre slides
+        });
+      });
+      
     $('.menu-hamburguer').click(function(){
-       $('nav').slideToggle();
+       $('.container-menu').slideToggle();
     })
+
+    $('.container-menu a').click(function() {
+        $('.container-menu').slideUp();
+    });
 
     $('#tel').mask('(00) 00000-0000',{
        placeholder: '(00) 00000-0000'

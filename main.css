@@ -35,18 +35,7 @@ footer > .container {
 }
 
 nav {
-    background-color: #575fcf;
-    padding: 16px 0;
-    display: none;
-}
-
-nav li {
-    list-style: none;
-    display: inline;
-    margin-right: 16px;
-    font-size: 18px;
-    font-weight: bold;
-    text-transform: uppercase;
+    background-color: transparent; /* Cor de fundo transparente para a nav */
 }
 
 nav li a {
@@ -92,6 +81,8 @@ section h2 {
     list-style: none;
     max-width: 30%;
     margin-bottom: 24px;
+    padding: 16px;
+    border-radius: 8px;
 }
 
 .lista-veiculos li img {
@@ -166,3 +157,82 @@ footer li {
 footer li img {
     height: 32px;
 }
+
+
+.produtos-destaque li {
+    background-color: rgb(199, 199, 199);
+    padding: 16px 0;
+    padding-left: 360px;
+
+}
+
+.container-menu {
+    height: 100px;
+    width: 200px;
+    display: none;
+    position: absolute;
+    top: 100%; 
+    right: 160px;
+}
+
+
+.container-menu li {
+    display: block;
+    text-align: center;
+    padding: 8px;
+    background-color: #575fcf;
+}
+
+.contato {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-empresa img {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+}
+
+.form-contato {
+    background-color: gray;
+    width: 350px;
+    border-radius: 8px;
+}
+
+.form-contato input, textarea {
+    border-radius: 8px;
+}
+
+.ver-mais {
+    width: 120px;
+    font-style: normal;
+    background-color: blue;
+}
+
+img {
+    border-radius: 8px;
+}
+
+.anuncios img {
+    height: 100px;
+    object-fit: cover;
+    width: 100%; 
+    border-radius: 0;
+}
+
+.anuncios {
+    height: 100px;
+}
+
+
+.produtos-destaque .produto {
+    background-color: green;
+    color: white;
+    padding: 16px; 
+    border-radius: 8px;
+    max-width: 300px;  
+}
+
+
+
