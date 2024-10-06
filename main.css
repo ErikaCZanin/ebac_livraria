@@ -9,6 +9,10 @@ html {
     overflow-x: hidden;
 }
 
+body {
+    background-color: #FFF6EF;
+}
+
 .container {
     max-width: 1024px;
     width: 100%;
@@ -16,9 +20,9 @@ html {
 }
 
 header, footer {
-    background-color: #192a56;
+    background-color: #FFFFFF;
     padding-top: 16px;
-    color: #fff;
+    color: black;
 }
 header {
     position: sticky;
@@ -36,8 +40,9 @@ footer > .container {
 
 #imgEntrada img {
     max-width: 100%;
-    height: 350px;
+    height: 450px;
 }
+
 
 nav li a {
     color: #fff;
@@ -52,7 +57,7 @@ nav li a {
 .menu-hamburguer span {
     height: 2px;
     width: 100%;
-    background-color: #fff;
+    background-color: black;
     display: block;
     margin-bottom: 4px;
 }
@@ -62,7 +67,9 @@ nav li a {
 }
 
 .livrosPrincipais {
-    padding-top: 24px;
+    padding: 32px;
+    background-color: #FFFEFD;
+    border-radius: 8px;
 }
 
 .sobre-a-loja {
@@ -85,18 +92,27 @@ section h2 {
 .lista-veiculos {
     flex-wrap: wrap;
 }
-
 .lista-veiculos li {
     list-style: none;
-    max-width: 30%;
+    width: 30%;
     margin-bottom: 24px;
     padding: 16px;
     border-radius: 8px;
+    border: 0.5px solid #b69072; 
+}
+
+
+.produtos-destaque li img {
+    max-width: 100%;
+    margin-bottom: 8px;
 }
 
 .lista-veiculos li img {
-    max-width: 100%;
+    width: 100%;
+    height: 350px; 
+    object-fit: cover;
 }
+
 
 .lista-veiculos li h3 {
     margin: 16px 0;
@@ -111,7 +127,7 @@ button {
     width: 100%;
     padding: 8px 0;
     border: none;
-    background-color: green;
+    background-color: #bc7848;
     color: #fff;
     font-size: 16px;
     font-weight:bold;
@@ -169,7 +185,7 @@ footer li img {
 
 
 .produtos-destaque li {
-    background-color: rgb(199, 199, 199);
+    background-color: #fff;
     padding: 16px 0;
     padding-left: 360px;
 
@@ -189,7 +205,7 @@ footer li img {
     display: block;
     text-align: center;
     padding: 8px;
-    background-color: #575fcf;
+    background-color: #b69072;
 }
 
 .contato {
@@ -201,12 +217,14 @@ footer li img {
     width: 350px;
     height: 350px;
     border-radius: 50%;
+    border: solid;
 }
 
 .form-contato {
-    background-color: gray;
+    background-color: #b69072;
     width: 350px;
     border-radius: 8px;
+    padding: 8px;
 }
 
 .form-contato input, textarea {
@@ -225,17 +243,19 @@ img {
 
 .anuncios img {
     height: 100px;
+    width: 1024px;
     object-fit: cover;
     width: 100%; 
     border-radius: 0;
 }
 
 .produtos-destaque .produto {
-    background-color: green;
-    color: white;
+    background-color: #FFF6EF;
+    color: black;
     padding: 16px; 
     border-radius: 8px;
-    max-width: 300px;  
+    max-width: 300px; 
+    border: 0.5px solid #b69072; 
 }
 
 
