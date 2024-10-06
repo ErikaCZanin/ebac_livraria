@@ -1,3 +1,4 @@
+/*Gerais*/
 * {
     margin: 0;
     padding: 0;
@@ -13,10 +14,12 @@ body {
     background-color: #FFF6EF;
 }
 
-.container {
-    max-width: 1024px;
-    width: 100%;
-    margin: 0 auto;
+section {
+    padding: 48px 0;
+}
+
+section h2 {
+    margin-bottom: 16px;
 }
 
 header, footer {
@@ -29,97 +32,6 @@ header {
     top: 0;
     left: 0;
     z-index: 1;
-}
-
-header > .container,
-footer > .container {
-    justify-content: space-between;
-    align-items: center;
-    padding-bottom: 16px;
-}
-
-#imgEntrada img {
-    max-width: 100%;
-    height: 450px;
-}
-
-
-nav li a {
-    color: #fff;
-    text-decoration: none;
-}
-
-.menu-hamburguer {
-    width: 32px;
-    cursor: pointer;
-}
-
-.menu-hamburguer span {
-    height: 2px;
-    width: 100%;
-    background-color: black;
-    display: block;
-    margin-bottom: 4px;
-}
-
-.container-flex {
-    display: flex; 
-}
-
-.livrosPrincipais {
-    padding: 32px;
-    background-color: #FFFEFD;
-    border-radius: 8px;
-}
-
-.sobre-a-loja {
-    padding-top: 16px;
-}
-
-.sobre-a-loja img {
-    width: 450px;
-    margin-right: 24px;
-}
-
-section {
-    padding: 48px 0;
-}
-
-section h2 {
-    margin-bottom: 16px;
-}
-
-.lista-veiculos {
-    flex-wrap: wrap;
-}
-.lista-veiculos li {
-    list-style: none;
-    width: 30%;
-    margin-bottom: 24px;
-    padding: 16px;
-    border-radius: 8px;
-    border: 0.5px solid #b69072; 
-}
-
-
-.produtos-destaque li img {
-    max-width: 100%;
-    margin-bottom: 8px;
-}
-
-.lista-veiculos li img {
-    width: 100%;
-    height: 350px; 
-    object-fit: cover;
-}
-
-
-.lista-veiculos li h3 {
-    margin: 16px 0;
-}
-
-.item-central {
-    margin: 0 5%
 }
 
 button {
@@ -136,6 +48,145 @@ button {
     border-radius: 16px;
 }
 
+img {
+    border-radius: 8px;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header > .container,
+footer > .container {
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 16px;
+}
+
+#imgEntrada img {
+    max-width: 100%;
+    height: 450px;
+}
+
+.container-flex, 
+.contato {
+    display: flex; 
+}
+
+.livrosPrincipais,
+.contatoOpcoes{
+    padding: 32px;
+    background-color: #FFFEFD;
+    border-radius: 8px;
+}
+
+.anuncios img {
+    height: 100px;
+    width: 1024px;
+    object-fit: cover;
+    width: 100%; 
+    border-radius: 0;
+}
+
+
+/*Menu*/
+nav li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    transition: font-size 0.3s ease;
+}
+
+nav li a:hover {
+    font-size: 18px;
+}
+
+.menu-hamburguer {
+    width: 32px;
+    cursor: pointer;
+}
+
+.menu-hamburguer span {
+    height: 2px;
+    width: 100%;
+    background-color: black;
+    display: block;
+    margin-bottom: 4px;
+}
+
+.container-menu {
+    height: 100px;
+    width: 200px;
+    display: none;
+    position: absolute;
+    top: 100%; 
+    right: 160px;
+}
+
+
+.container-menu li {
+    display: block;
+    text-align: center;
+    padding: 8px;
+    background-color: #b69072;
+}
+
+/*Sessão sobre a loja*/
+
+.sobre-a-loja {
+    padding-top: 16px;
+}
+
+.sobre-a-loja img {
+    width: 450px;
+    margin-right: 24px;
+}
+
+/*Lista dos livros principais*/
+.lista-livros {
+    flex-wrap: wrap;
+}
+.lista-livros li {
+    list-style: none;
+    width: 30%;
+    margin-bottom: 24px;
+    padding: 16px;
+    border-radius: 8px;
+    border: 0.5px solid #b69072; 
+}
+
+.lista-livros li img {
+    width: 100%;
+    height: 350px; 
+    object-fit: cover;
+}
+
+
+.lista-livros li h3 {
+    margin: 16px 0;
+}
+
+.item-central {
+    margin: 0 5%
+}
+
+.ver-mais {
+    width: 120px;
+    font-style: normal;
+    background-color: blue;
+}
+
+
+
+/*Lista dos livros em destaque*/
+.produtos-destaque li img {
+    max-width: 100%;
+    margin-bottom: 8px;
+}
+
+
 .price{
     margin: 16px 0;
     display: block;
@@ -146,6 +197,54 @@ button {
     font-size: 16px;
 }
 
+.produtos-destaque li {
+    background-color: #fff;
+    padding: 16px 0;
+    padding-left: 340px;
+    border: none;
+
+}
+
+.produtos-destaque .produto {
+    background-color: #FFF6EF;
+    color: black;
+    padding: 16px; 
+    border-radius: 8px;
+    max-width: 300px; 
+    border: 0.5px solid #b69072; 
+}
+
+.produto button {
+    border: 2px solid yellow;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #bc7848;
+    color: #fff;
+    cursor: pointer;
+    animation: border-color-animation 3s infinite linear;
+}
+
+@keyframes border-color-animation {
+    0% {
+        border-color: yellow;
+    }
+    50% {
+        border-color: blue;
+    }
+    75% {
+        border-color: green;
+    }
+    100% {
+        border-color: yellow;
+    }
+}
+
+.rodape img {
+    width: 90px;
+    height: 90px;
+}
+
+/*Formulario*/
 .form-campo {
     margin-bottom: 16px;
 }
@@ -174,6 +273,8 @@ form button {
     max-width: 120px;
 }
 
+/*Rodapé*/
+
 footer li {
     list-style: none;
     margin-left: 16px;
@@ -181,31 +282,6 @@ footer li {
 
 footer li img {
     height: 32px;
-}
-
-
-.produtos-destaque li {
-    background-color: #fff;
-    padding: 16px 0;
-    padding-left: 360px;
-
-}
-
-.container-menu {
-    height: 100px;
-    width: 200px;
-    display: none;
-    position: absolute;
-    top: 100%; 
-    right: 160px;
-}
-
-
-.container-menu li {
-    display: block;
-    text-align: center;
-    padding: 8px;
-    background-color: #b69072;
 }
 
 .contato {
@@ -230,33 +306,5 @@ footer li img {
 .form-contato input, textarea {
     border-radius: 8px;
 }
-
-.ver-mais {
-    width: 120px;
-    font-style: normal;
-    background-color: blue;
-}
-
-img {
-    border-radius: 8px;
-}
-
-.anuncios img {
-    height: 100px;
-    width: 1024px;
-    object-fit: cover;
-    width: 100%; 
-    border-radius: 0;
-}
-
-.produtos-destaque .produto {
-    background-color: #FFF6EF;
-    color: black;
-    padding: 16px; 
-    border-radius: 8px;
-    max-width: 300px; 
-    border: 0.5px solid #b69072; 
-}
-
 
 

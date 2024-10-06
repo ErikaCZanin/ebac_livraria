@@ -51,16 +51,24 @@ $(document).ready(function(){
        }
    })
 
-   $('.lista-veiculos button').click(function(){
+   $('.lista-livros button').click(function(){
     const destino = $('#contato');
     
-      const nomeVeiculo = $(this).parent().find('h3').text();
+      const nomeLivro = $(this).parent().find('h3').text();
 
-      $('#vInteresse').val(nomeVeiculo);
+      $('#lInteresse').val(nomeLivro);
 
         $('html').animate({
             scrollTop: destino.offset().top
         }, 1000)
    })
+
+   $('.ver-mais').click(function() {
+    const destino = $('#contato');
+
+    $('html, body').animate({
+        scrollTop: destino.offset().top
+    }, 1000);
+});
 
 })
